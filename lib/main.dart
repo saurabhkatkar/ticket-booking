@@ -43,19 +43,19 @@ class _MyAppState extends State<MyApp> {
 //      color: Colors.blue,
 //    ));
 
-    List<PointLatLng> result = await polylinePoints?.getRouteBetweenCoordinates(
-        googleAPIKey,
-        _initialPosition.latitude,
-        _initialPosition.longitude,
-        latlng.latitude,
-        latlng.longitude);
-    if (result.isNotEmpty) {
-      // loop through all PointLatLng points and convert them
-      // to a list of LatLng, required by the Polyline
-      result.forEach((PointLatLng point) {
-        polylineCoordinates.add(LatLng(point.latitude, point.longitude));
-      });
-    }
+    // List<PointLatLng> result = await polylinePoints?.getRouteBetweenCoordinates(
+    //     googleAPIKey,
+    //     _initialPosition.latitude,
+    //     _initialPosition.longitude,
+    //     latlng.latitude,
+    //     latlng.longitude);
+    // if (result.isNotEmpty) {
+    //   // loop through all PointLatLng points and convert them
+    //   // to a list of LatLng, required by the Polyline
+    //   result.forEach((PointLatLng point) {
+    //     polylineCoordinates.add(LatLng(point.latitude, point.longitude));
+    //   });
+    // }
     setState(() {
       // create a Polyline instance
       // with an id, an RGB color and the list of LatLng pairs
