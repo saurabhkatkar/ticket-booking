@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   final Set<Marker> _markers = {};
   Set<Polyline> _polylines = {};
   static LatLng _initialPosition;
-  String googleAPIKey = "AAIzaSyAeD5DJVHgXbYnZrCO37KZX3cvmT3Mtysc";
+  String googleAPIKey = "YOUR-API-KEY";
   // this will hold each polyline coordinate as Lat and Lng pairs
   List<LatLng> polylineCoordinates = [];
 // this is the key object - the PolylinePoints
